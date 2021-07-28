@@ -33,16 +33,25 @@ namespace AspNetCoreTodo
             {
                 options.UseSqlServer(Configuration["ConnectionStrings:TodoDb"]);
             });
-            services.AddDatabaseDeveloperPageExceptionFilter();
+            //services.AddDatabaseDeveloperPageExceptionFilter();
 
-            services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-                .AddEntityFrameworkStores<ApplicationDbContext>();
-            services.AddControllersWithViews();
-            
-            services.AddScoped<ITodoItemService, TodoItemService>();
+            //services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+            //    .AddEntityFrameworkStores<ApplicationDbContext>();
+            //services.AddControllersWithViews();
+
             services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = false)
-            .AddRoles<IdentityRole>()
-            .AddEntityFrameworkStores<ApplicationDbContext>();
+                .AddRoles<IdentityRole>()
+                .AddEntityFrameworkStores<ApplicationDbContext>();
+
+            services.AddScoped<ITodoItemService, TodoItemService>();
+
+            services.AddControllersWithViews();
+
+            services.AddRazorPages();
+
+            services.AddAuthentication();
+
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -51,7 +60,7 @@ namespace AspNetCoreTodo
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-               // app.UseMigrationsEndPoint();
+                app.UseMigrationsEndPoint();
             }
             else
             {

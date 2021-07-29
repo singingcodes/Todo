@@ -7778,19 +7778,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\GREAT\\.nuget\\packages\\": {}
+    "C:\\Users\\KLITEGROUP\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\GREAT\\Desktop\\ToDo\\AspNetCoreTodo\\AspNetCoreTodo.csproj",
+      "projectUniqueName": "C:\\Users\\KLITEGROUP\\source\\repos\\Todo\\AspNetCoreTodo\\AspNetCoreTodo.csproj",
       "projectName": "AspNetCoreTodo",
-      "projectPath": "C:\\Users\\GREAT\\Desktop\\ToDo\\AspNetCoreTodo\\AspNetCoreTodo.csproj",
-      "packagesPath": "C:\\Users\\GREAT\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\GREAT\\Desktop\\ToDo\\AspNetCoreTodo\\obj\\",
+      "projectPath": "C:\\Users\\KLITEGROUP\\source\\repos\\Todo\\AspNetCoreTodo\\AspNetCoreTodo.csproj",
+      "packagesPath": "C:\\Users\\KLITEGROUP\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\KLITEGROUP\\source\\repos\\Todo\\AspNetCoreTodo\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\GREAT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\KLITEGROUP\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7863,7 +7863,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

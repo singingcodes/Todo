@@ -26,20 +26,19 @@ namespace AspNetCoreTodo
                 .Build();
         private static void InitializeDatabase(IWebHost host)
         {
-        using (var scope = host.Services.CreateScope())
-        {
-        var services = scope.ServiceProvider;
-        try
-        {
-        SeedData.InitializeAsync(services).Wait();
-        }
-        catch (Exception ex)
+            using (var scope = host.Services.CreateScope())
             {
-            var logger = services
-            .GetRequiredService<ILogger<Program>>();
-            logger.LogError(ex, "Error occurred seeding the DB.");
+                var services = scope.ServiceProvider;
+                try
+                {
+                    SeedData.InitializeAsync(services).Wait();
+                }
+                catch (Exception ex)
+                {
+                    var logger = services.GetRequiredService<ILogger<Program>>();
+                    logger.LogError(ex, "Error occurred seeding the DB.");
+                }
             }
-        }
         }
 
         // public static IHostBuilder CreateHostBuilder(string[] args) =>
